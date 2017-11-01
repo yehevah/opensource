@@ -1,2 +1,11 @@
 server: 
   port: 8010
+spring:
+  application: 
+    name: orderservice
+eureka: 
+  client:
+    serviceUrl: 
+      defaultZone: http://user:123@peer1:8761/eureka/,http://user:123@peer2:8762/eureka/
+  instance: 
+    prefer-ip-address: true

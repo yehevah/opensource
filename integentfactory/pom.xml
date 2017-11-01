@@ -20,14 +20,14 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Camden.SR7</version>
+				<version>Dalston.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
-				<version>1.5.2.RELEASE</version>
+				<version>1.5.2.RELEASE</version> 
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -47,5 +47,7 @@
   	<module>userservice</module>
     <module>orderservice</module>
     <module>registry</module>
+    <module>registry-ha</module>
+    <module>userservice-ha</module>
   </modules>
 </project>

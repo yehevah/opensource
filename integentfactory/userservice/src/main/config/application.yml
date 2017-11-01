@@ -1,6 +1,8 @@
 server:
   port: 8000
 spring:
+  application: 
+    name: userservice
   jpa:
     generate-ddl: false
     show-sql: true
@@ -16,3 +18,10 @@ logging:
     org.hibernate: INFO
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
     org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+eureka: 
+  client: 
+    serviceUrl:
+      defaultZone: http://user:123@peer1:8761/eureka/,http://user:123@peer2:8762/eureka/
+  instance: 
+    prefer-ip-address: true
+    #hostname: userservice-01
