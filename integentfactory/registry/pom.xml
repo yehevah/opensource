@@ -14,6 +14,8 @@
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<docker.repostory>192.168.1.102:5000</docker.repostory>    
+	<docker.registry.name>registry:2</docker.registry.name>
   </properties>
   <dependencies>
   	<dependency>
