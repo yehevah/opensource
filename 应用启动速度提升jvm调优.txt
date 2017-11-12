@@ -1,0 +1,9 @@
+-Dspring.profiles.active=peer1 -Xverify:none -Xmx1536m -Xms1536m -Xmn512m -XX:PermSize=256m -XX:MaxPermSize=256m -XX:SurvivorRatio=4 -XX:+DisableExplicitGC -Xnoclassgc -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=85
+
+-Xverify:none  类加载时不作校验
+根据启动时内存和GC的情况设置堆大小减少gc耗时
+-XX:+DisableExplicitGC，不作full gc
+-Xnoclassgc 不作类GC
+-XX:+UseParNewGC 使用并行new gc
+-XX:+UseConcMarkSweepGC 使用并行标记算法CMS作gc
+-XX:CMSInitiatingOccupancyFraction=85 CMS初始化并发数
